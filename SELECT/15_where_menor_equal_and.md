@@ -39,9 +39,4 @@ Analisando linha por linha:
 - Claire (35, Yellow) -> ID maior que 30 mas a cor eh diferente = FALSE
 - David (40, Red) -> ID maior que 30 mas a cor eh diferente = FALSE
 
----
-
-## OBSERVAÇÕES
-- `<=` significa **menor ou igual**
-- `AND` torna o filtro mais restritivo
 
