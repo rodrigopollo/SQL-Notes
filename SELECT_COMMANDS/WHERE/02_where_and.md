@@ -14,7 +14,8 @@
 ### Comando
 SELECT name, choice 
 FROM table_1  
-WHERE name = 'David' AND choice = 'Red';
+WHERE name = 'David' 
+  AND choice = 'Red';
 
 ---
 

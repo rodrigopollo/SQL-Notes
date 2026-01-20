@@ -1,6 +1,6 @@
 # SELECT — COUNT DISTINCT (contar valores únicos em uma coluna)
 
-### Exemplo de tabela
+### Exemplo de tabela:
 
 | id | name   | choice |
 |----|--------|--------|
@@ -11,7 +11,7 @@
 
 ---
 
-### Contando valores únicos na coluna `choice`
+### Comando: Contando valores únicos na coluna `choice`
 SELECT COUNT(DISTINCT choice) FROM table_1;
 
 

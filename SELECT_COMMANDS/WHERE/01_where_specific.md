@@ -1,6 +1,6 @@
 # SELECT — WHERE (filtrar linhas por condição)
 
-### Exemplo de tabela
+### Exemplo de tabela:
 
 | NAME   | CHOICE |
 |--------|--------|
@@ -11,14 +11,14 @@
 
 ---
 
-### Comando
+### Comando:
 SELECT name, choice  
 FROM table_1  
 WHERE name = 'David';
 
 ---
 
-### Resultado esperado
+### Resultado esperado:
 
 | NAME   | CHOICE |
 |--------|--------|
@@ -27,8 +27,7 @@ WHERE name = 'David';
 
 ---
 
-### Explicação
-
+### Explicação:
 O comando **WHERE** funciona como um filtro:  
 Mostra **so as linhas que cumprem a condição**.
 No exemplo acima, a condição é:
@@ -36,7 +35,6 @@ No exemplo acima, a condição é:
 - name = 'David'
 
 Ou seja, queremos **todas as linhas da coluna NAME onde o nome seja David**.
-
 A tabela tem 4 entradas, mas **apenas 2** têm `name = 'David'`.  
 Então o SQL retorna somente:
 

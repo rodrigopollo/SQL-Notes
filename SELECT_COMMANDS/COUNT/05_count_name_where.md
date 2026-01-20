@@ -1,6 +1,6 @@
 # SELECT — COUNT WHERE (contar com condição)
 
-### Exemplo de tabela
+### Exemplo de tabela:
 
 | NAME   | CHOICE | ID |
 |--------|--------|----|
@@ -11,18 +11,18 @@
 
 ---
 
-### Comando SQL
+### Comando SQL:
 SELECT COUNT(name) FROM table_2  
 WHERE id > 25 AND choice = 'Red';
 
 ---
 
-### Resultado esperado
+### Resultado esperado:
 * 1
 
 ---
 
-### Explicação
+### Explicaçao:
 O comando acima conta **quantos nomes** atendem às condições definidas no `WHERE`.
 
 Condições aplicadas:
@@ -35,7 +35,7 @@ Por isso, o resultado é:
 
 ---
 
-### Observação
+### Observaçao:
 
 `COUNT(condição)` é muito utilizado quando queremos **quantificar resultados filtrados**,  
 ou seja, **não contar tudo**, mas contar **somente o que atende aos critérios**.

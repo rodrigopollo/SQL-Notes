@@ -1,13 +1,13 @@
 # SELECT DISTINCT — Selecionar valores únicos
 
-## Comando
+## Comando:
 SELECT DISTINCT (name) FROM table_1;
 
 Como podemos ver no banco de dados, o nome **David** aparece mais de uma vez.
 Sendo assim, esse comando vai selecionar **somente os nomes diferentes**.
 
 
-## EXEMPLO: SELECT DISTINCT (name) FROM table_1
+## EXEMPLO: SELECT DISTINCT (name) FROM table_1:
 
 ### Database — Table 1
 | NAME   | Choice |
@@ -19,8 +19,8 @@ Sendo assim, esse comando vai selecionar **somente os nomes diferentes**.
 
 ----------
 
-### Resultado esperado
-A lista com os nomes únicos será:
+### Resultado esperado:
+A lista com os nomes unicos sera:
 
 - Zach
 - David
@@ -28,8 +28,8 @@ A lista com os nomes únicos será:
 
 ---------
 
-### Observação importante
-O comando `DISTINCT` filtra valores repetidos, mas **não identifica se são pessoas diferentes ou a mesma pessoa alterando sua escolha**.
+### Observaçao importante:
+O comando `DISTINCT` filtra valores repetidos, mas **nao identifica se são pessoas diferentes ou a mesma pessoa alterando sua escolha**.
 
 Ou seja:
 - O primeiro **David** (que escolheu **Green**)

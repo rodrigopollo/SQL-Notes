@@ -16,10 +16,14 @@ Ordenar os dados usando **ordem decrescente (DESC)**:
 1. Company em ordem alfabetica **decrescente (Z → A)**
 2. Sales em ordem numerica **decrescente (maior → menor)** quando a Company for igual
 
+---
+
 ## COMANDO SQL
 SELECT company, name, sales  
 FROM table_1  
 ORDER BY company DESC, sales DESC;
+
+---
 
 ## RESULTADO ESPERADO
 ---------------------------------
@@ -31,6 +35,7 @@ ORDER BY company DESC, sales DESC;
 | Apple  | Zach   | 300   |
 | Apple  | Andew  | 100   |
 ---------------------------------
+
 
 ## EXPLICAÇAO
 - `ORDER BY company DESC` organiza primeiro as empresas em ordem alfabetica decrescente.

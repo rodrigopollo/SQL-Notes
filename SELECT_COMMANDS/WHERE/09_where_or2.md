@@ -1,7 +1,6 @@
-```md
 # SQL – WHERE OR (usando !=)
 
-## TABELA>
+## TABELA:
 
 ---------------------------------
 | NAME   | Choice  | ID |
@@ -12,17 +11,18 @@
 | David  | Red     | 40 |
 ---------------------------------
 
-## OBJETIVO
+## OBJETIVO:
 Mostrar os **nomes** que cumprem **pelo menos uma** das condições:
 - ID **menor que 40**
 - Choice **diferente de 'Green'**
 
-## COMANDO SQL
+## COMANDO SQL:
 SELECT name  
 FROM table_2  
-WHERE id < 40 OR choice != 'Green';
+WHERE id < 40 
+  OR choice != 'Green';
 
-## RESULTADO ESPERADO
+## RESULTADO ESPERADO:
 
 -----------------
 | NAME  |
@@ -33,7 +33,7 @@ WHERE id < 40 OR choice != 'Green';
 | David |
 -----------------
 
-## EXPLICAÇAO
+## EXPLICAÇAO:
 - O operador `OR` significa **OU** (ja visto anteriormente).
 - O operador `!=` significa **diferente de**.
 - A linha sera mostrada se **qualquer uma** das condiçoes for verdadeira.
@@ -57,8 +57,8 @@ Linha por linha:
   - Choice != 'Green' (Red) → TRUE  
   - Entra no resultado
 
-## OBSERVAÇÕES
+## OBSERVAÇÕES:
 - Com `OR`, basta **uma condição verdadeira** para a linha aparecer.
 - Por isso, neste exemplo, **todas as linhas** da tabela são retornadas.
 - Para tornar o filtro mais restritivo, podemos usar `AND` em vez de `OR`.
-```
+

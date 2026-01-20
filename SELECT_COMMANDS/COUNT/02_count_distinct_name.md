@@ -1,6 +1,6 @@
 # SELECT — COUNT DISTINCT (contar valores únicos)
 
-### Exemplo de tabela
+### Exemplo de tabela:
 
 | id | name   | choice |
 |----|--------|--------|
@@ -11,17 +11,16 @@
 
 ---
 
-### Comando
+### Comando:
 SELECT COUNT(DISTINCT name) FROM table_1;
 
 
-### Resultado esperado
+### Resultado esperado:
 * 3
 
 ---
 
-### Anotações
-
+### Anotaçoes:
 Como já vimos em **DISTINCT**, temos dois registros com o valor **"David"** na coluna `name`.  
 O SQL **não identifica se é a mesma pessoa** ou pessoas diferentes — ele se importa apenas com 
 o **valor repetido**.

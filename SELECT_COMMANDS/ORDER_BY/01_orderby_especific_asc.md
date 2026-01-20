@@ -1,4 +1,3 @@
-```md
 # SQL – ORDER BY (ASC alfabético e ASC numérico)
 
 ## TABELA:
@@ -12,18 +11,19 @@
 | Xerox  | Steven | 100   |
 ---------------------------------
 
-## OBJETIVO
+## OBJETIVO:
 Ordenar os dados seguindo **dois criterios ao mesmo tempo**:
 1. Company em ordem **alfabetica crescente (ASC – A → Z)**
 2. Sales em ordem **numerica crescente (ASC – menor → maior)** quando a Company for igual
 
 
-## COMANDO SQL
+## COMANDO SQL:
 SELECT company, name, sales  
 FROM table_1  
 ORDER BY company ASC, sales ASC;
 
-## RESULTADO ESPERADO
+
+## RESULTADO ESPERADO:
 ---------------------------------
 | Company | Name   | Sales |
 ---------------------------------
@@ -34,7 +34,7 @@ ORDER BY company ASC, sales ASC;
 | Xerox  | Steven | 100   |
 ---------------------------------
 
-## EXPLICAÇÃO
+## EXPLICAÇAO:
 - O `ORDER BY company ASC` organiza primeiro as empresas em ordem alfabética.
 - Como existem empresas repetidas (Apple e Google), entra o segundo critério:
   - `sales ASC` organiza os valores de vendas do menor para o maior **dentro da mesma empresa**.
@@ -46,8 +46,8 @@ ORDER BY company ASC, sales ASC;
     - 200
     - 500
 
-## OBSERVAÇÕES
+## OBSERVAÇOES:
 - `ASC` eh o padrão do SQL (mesmo sem escrever, ele assume ASC).
 - Se fosse usado `sales DESC`, o maior valor apareceria primeiro dentro da mesma empresa.
 - A ordem dos campos no `ORDER BY` importa e define a prioridade da organização.
-```
+

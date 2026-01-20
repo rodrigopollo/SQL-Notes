@@ -1,4 +1,4 @@
-```md
+
 # SQL – ORDER BY usando SELECT *
 
 ## TABELA:

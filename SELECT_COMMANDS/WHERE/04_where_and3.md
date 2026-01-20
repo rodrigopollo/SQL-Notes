@@ -1,4 +1,3 @@
-```md
 # SQL – WHERE AND (Filtro múltiplo)
 
 ## TABELA: table_2
@@ -42,4 +41,4 @@ WHERE id > 25 AND choice = 'Red';
 - Se uma linha nao cumprir **qualquer** condiçao, ela eh descartada.
 - `AND` deixa o filtro mais restritivo adicionando uma segunda verificaçao.
 - Note que tem 2 "David" na tabela, mas so **um** atende as condições.
-```
+

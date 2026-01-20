@@ -1,4 +1,3 @@
-```md
 # SQL – WHERE OR (Filtro múltiplo)
 
 ## TABELA: 
@@ -20,9 +19,10 @@ Mostrar uma lista com os **nomes** que cumprem **pelo menos uma** das condiçoes
 ## COMANDO SQL
 SELECT name  
 FROM table_2  
-WHERE id > 35 OR choice = 'Green';
+WHERE id > 35 
+  OR choice = 'Green';
 
-## RESULTADO ESPERADO
+## RESULTADO ESPERADO:
 
 -----------------
 | NAME  |
@@ -32,7 +32,7 @@ WHERE id > 35 OR choice = 'Green';
 | David |
 -----------------
 
-## EXPLICAÇÃO
+## EXPLICAÇÃO:
 - O operador `OR` significa **OU**.
 - A info vai ser mostrada se **qualquer uma** das condiçoes for verdadeira.
   - Zach → Choice é Green → TRUE
@@ -40,8 +40,8 @@ WHERE id > 35 OR choice = 'Green';
   - Claire → não cumpre nenhuma condição → FALSE
   - David (ID 40) → ID > 35 → TRUE
 
-## OBSERVAÇÕES
+## OBSERVAÇÕES:
 - `OR` eh menos restritivo que `AND`.
 - Resultados podem incluir valores repetidos.
 - Para remover duplicados, seria necessário usar `DISTINCT`.
-```
+

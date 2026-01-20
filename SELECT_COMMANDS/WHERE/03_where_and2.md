@@ -11,7 +11,7 @@
 
 ---
 
-## COMANDO SQL
+## COMANDO SQL:
 SELECT *
 FROM table_2
 WHERE id <= 30
@@ -19,7 +19,7 @@ WHERE id <= 30
 
 ---
 
-## RESULTADO ESPERADO
+## RESULTADO ESPERADO:
 
 | ID | NAME  | CHOICE |
 |----|-------|--------|
@@ -28,7 +28,7 @@ WHERE id <= 30
 
 ---
 
-## EXPLICAÇÃO
+## EXPLICAÇÃO:
 Condições aplicadas:
 - `id <= 30` → seleciona IDs **25 e 30**
 - `choice = 'Green'` → seleciona apenas quem escolheu **Green**

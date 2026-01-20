@@ -1,6 +1,6 @@
 # SELECT COUNT(*) — Contar todas as linhas da tabela
 
-### Exemplo de tabela
+### Exemplo de tabela:
 
 | NAME   | CHOICE |
 |--------|--------|
@@ -11,17 +11,17 @@
 
 ---
 
-## Comando SQL
+## Comando SQL:
 SELECT COUNT(*) FROM table_1;
 
 ---
 
-## Resultado esperado
+## Resultado esperado:
 * 4
 
 ---
 
-## Anotaçoes
+## Anotaçoes:
 O comando `COUNT(*)` conta **todas as linhas** da tabela, independente da coluna ou do conteúdo.
 
 Comando muito util em **tabelas grandes**, onde não eh possível visualizar manualmente quantos
