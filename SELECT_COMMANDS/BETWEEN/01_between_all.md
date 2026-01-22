@@ -1,6 +1,6 @@
 # WHERE BETWEEN — Intervalo de Valores Numéricos
 
-## 📌 Conceito:
+## Conceito:
 As duas condições abaixo fazem **exatamente a mesma coisa**:
 
 - `WHERE valor >= 5 AND valor <= 10`
@@ -10,7 +10,7 @@ O comando **BETWEEN** mostra oq esta **Do primeiro valor ate o Ultimo valor** in
 
 ---
 
-## 📋 Tabela usada no exemplo:
+## Tabela usada no exemplo:
 
 | Company | Name   | Sales |
 |--------|--------|-------|
@@ -22,7 +22,7 @@ O comando **BETWEEN** mostra oq esta **Do primeiro valor ate o Ultimo valor** in
 
 ---
 
-## 🧠 Comando SQL:
+## Comando SQL:
 SELECT *  
 FROM table_1  
 WHERE sales BETWEEN 250 AND 550;
@@ -39,7 +39,7 @@ WHERE sales BETWEEN 250 AND 550;
 
 ---
 
-## 📝 Observações Importantes
+## Observações Importantes
 - O **BETWEEN eh inclusivo**, ou seja:
   - O valor **250 entra**
   - O valor **550 entra**
@@ -50,11 +50,11 @@ WHERE sales BETWEEN 250 AND 550;
   FROM table_1  
   WHERE sales BETWEEN 250 AND 550;
 
-  👉 O resultado seria **3**
+  -> O resultado seria **3**
 
 ---
 
-## 📌 Resumo rápido
+## Resumo rápido
 - `BETWEEN` = intervalo **de A ate C**
 - Inclui os valores **A** e **B** ou seja A, B e C seriam mostrados.
 - Eh mais facil de usar e ler do que `>= AND <=`
