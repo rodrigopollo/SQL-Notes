@@ -31,8 +31,6 @@ WHERE name LIKE '_her%';
 --- 
 
 ## Explicaçao:
-
-
 Aqui estamos usan do **_her%** que significa o seguinte:
 
 - `_` (underscore)  
