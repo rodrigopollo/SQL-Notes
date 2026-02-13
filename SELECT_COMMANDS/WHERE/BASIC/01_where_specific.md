@@ -1,50 +1,44 @@
-# SELECT — WHERE (filtrar linhas por condição)
+# LIKE + NOT LIKE — filtro combinado de padrões
 
-### Exemplo de tabela:
+## Tabela:
+| id | company | name     | sales |
+|----|---------|----------|-------|
+| 1  | Xerox   | Steveni  | 100   |
+| 2  | Google  | Cheryl   | 500   |
+| 3  | Google  | Claire   | 200   |
+| 4  | Apple   | Theresa  | 300   |
+| 5  | Apple   | Sherri   | 100   |
 
-| NAME   | CHOICE |
-|--------|--------|
-| Zach   | Green  |
-| David  | Green  |
-| Claire | Yellow |
-| David  | Red    |
-
----
-
-### Comando:
-SELECT name, choice  
+## Comando SQL:
+SELECT name  
 FROM table_1  
-WHERE name = 'David';
+WHERE name LIKE 'S%'  
+  AND name NOT LIKE '%he%';
+
+## Resultado Esperado:
+| name     |
+|----------|
+| Steveni  |
+
+## Contagem:
+SELECT COUNT(*)  
+FROM table_1  
+WHERE name LIKE 'S%'  
+  AND name NOT LIKE '%he%';
+
+## Resultado da Contagem:
+| count |
+|-------|
+| 1     |
 
 ---
 
-### Resultado esperado:
+## Explicaçao:
+- `LIKE 'S%'` seleciona so os nomes que começam com a letra **S**.
+- `NOT LIKE '%he%'` remove qualquer nome que tenha **he**.
+- `AND`  as 2 condiçoes tem q ser verdadeiras.
+- `Sherri` começa com **S**, mas tem **he** = FALSE
+- Apenas **Steveni** encaixa nas 2 regras = TRUE
 
-| NAME   | CHOICE |
-|--------|--------|
-| David  | Green  |
-| David  | Red    |
-
----
-
-### Explicação:
-O comando **WHERE** funciona como um filtro:  
-Mostra **so as linhas que cumprem a condição**.
-No exemplo acima, a condição é:
-
-- name = 'David'
-
-Ou seja, queremos **todas as linhas da coluna NAME onde o nome seja David**.
-A tabela tem 4 entradas, mas **apenas 2** têm `name = 'David'`.  
-Então o SQL retorna somente:
-
-- David — Green  
-- David — Red  
-
----
-
-### Observações
-- `WHERE` funciona parecido com um **if** da programação só entra quem for *True*.
-- Igual que no IF tbm podemos usar os operadores:  
-  `=`, `<`, `>`, `<=`, `>=`, `!=`
-- WHERE aparece **sempre depois do FROM**.
+## Observaçoes:
+- `%` representa qualquer quantidade de caracteres antes ou depois do padrão, ate mesmo nada.
