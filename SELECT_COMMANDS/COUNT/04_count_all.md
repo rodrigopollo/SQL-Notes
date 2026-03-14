@@ -9,12 +9,9 @@
 | Claire | Yellow |
 | David  | Red    |
 
----
 
 ## Comando SQL:
 SELECT COUNT(*) FROM table_1;
-
----
 
 ## Resultado esperado:
 * 4
@@ -30,7 +27,6 @@ Pensa em uma tabela com 15.000 linhas, seria inviavel contar uma a uma.
 
 Com `COUNT(*)`, o SQL faz isso por voce e te retorna o total de registros.
 
----
 
 ## Observação importante
 Vc tbm pode usar o nome de uma coluna (ex.: `COUNT(name)`), o uso de `COUNT(*)` é considerado:
