@@ -9,8 +9,6 @@
 | 3  | Claire | Yellow |
 | 4  | David  | Red    |
 
----
-
 ### Comando:
 SELECT COUNT(DISTINCT name) FROM table_1;
 
