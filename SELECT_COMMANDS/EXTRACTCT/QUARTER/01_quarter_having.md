@@ -1,10 +1,22 @@
 ## QUARTER — Qual foi o desempenho por trimestre em cada ano?
 
-**Tabela utilizada:** `payments`
+## Tabela utilizada
+
+```
+payments
++------------+---------------------+--------+
+| payment_id | payment_date        | amount |
++------------+---------------------+--------+
+| 1          | 2024-01-15 10:30:00 |  10.00 |
+| 2          | 2025-03-22 18:45:00 |  20.00 |
+| 3          | 2025-07-05 09:00:00 |  30.00 |
+| 4          | 2026-09-10 14:20:00 |  40.00 |
+| 5          | 2026-02-01 12:10:00 |  50.00 |
++------------+---------------------+--------+
+```
 
 > **Conceitos novos neste exercício:** `EXTRACT(QUARTER ...)` e `HAVING`.
 
----
 
 ### Query
 ```sql
