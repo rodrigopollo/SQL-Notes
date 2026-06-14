@@ -14,10 +14,8 @@ payments
 | 5          | 2026-02-01 12:10:00 |  50.00 |
 +------------+---------------------+--------+
 ```
----
 
 ## Query
-
 ```sql
 SELECT
     EXTRACT(MONTH FROM payment_date) AS mes,
@@ -30,7 +28,6 @@ ORDER BY mes ASC;
 ```
 
 ## Resultado
-
 ```
 +-----+----------------+---------------+
 | mes | qnt_pagamentos | total_vendido |
@@ -42,6 +39,7 @@ ORDER BY mes ASC;
 Em 2025 tivemos:
 - Março (mês 3): 1 pagamento de R$ 20,00.
 - Julho (mês 7): 1 pagamento de R$ 30,00.
+
 ---
 
 ## O que cada parte faz
